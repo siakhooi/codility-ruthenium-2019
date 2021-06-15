@@ -1,11 +1,11 @@
-# Codility Challenge: <Challenge Name>
+# Codility Challenge: Ruthenium 2019
 
-## <Task Name>
+## ReplacingBooks
 
-- Difficulty: <Difficulty>
-- <Description>
-- <challenge-url>
-- <task-url>
+- Difficulty: Medium
+- Given a list of integers, return the maximum number of consecutive integers equal to each other after replacing at most K of them.
+- <https://app.codility.com/programmers/challenges/ruthenium2019/>
+- <https://app.codility.com/programmers/task/replacing_books/>
 
 ## Versions
 
@@ -14,40 +14,12 @@
   - `OK`: Correctness 100%, Performance <100%.
   - `Fail`: Correctness <100%, Performance <100%.
 - File naming convention
-  - Code `A`: `MayThe4th2021A.java`
-  - Code `B`: `MayThe4th2021B.java`
+  - Code `A`: `Ruthenium2019A.java`
   - etc
 
-### Gold Award
+### Results
 
-| File | Complexity              | Result | Report                                                                            |
-| ---- | ----------------------- | ------ | --------------------------------------------------------------------------------- |
-| `A`  | `O(N*log(N))` or `O(N)` | `Good` | [3KMABZ](https://app.codility.com/cert/view/cert3KMABZ-DFKT9B4U8M83H9HB/details/) |
-
-## Helper Code
-
-```bash
-java -cp target/classes nsh.codility.Challenge2021A
-```
-
-```java
-	static void pf(String f, Object... v) {
-		System.out.printf(f, v);
-		System.out.println("");
-	}
-```
-
-```java
-	public static void main1(String argv[]) {
-		String S = "eeeeedddddaadddcccccccrweioutpwoeriotuweoituebbbbbbaaaa";
-		int K = 620;
-		String E = "aaaaaabbbbbbcccccccddddddddeeeeeeeiorwutpworiotuweoitue";
-
-		 String A = (new Challenge2021A()).solution(S, K);
-		pf("     K: %d", K);
-		pf("    in: %s", S);
-		pf("   out: %s", A);
-		pf("expert: %s", E);
-		pf("Result: %s", (A.equals(E) ? "good" : "bad"));
-	}
-```
+| File | Complexity                                                                   | Result | Report                                                                  |
+| ---- | ---------------------------------------------------------------------------- | ------ | ----------------------------------------------------------------------- |
+| `B`  | `O(N*log(N))` or `O(N)`                                                      | `Good` | [HMZZZU-AR6](https://app.codility.com/demo/results/trainingHMZZZU-AR6/) |
+| `A`  | `O(N*log(N))` or `O(N)` or `O(N*log(N)**2)` or `O(N**2)` or `O(N**2*log(N))` | `Fail` | [W9YURT-ZXS](https://app.codility.com/demo/results/trainingW9YURT-ZXS/) |
